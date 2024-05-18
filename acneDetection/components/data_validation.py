@@ -1,7 +1,7 @@
 import os, sys
 import shutil
 from acneDetection.logger import logging
-from acneDetection.exception import SignException
+from acneDetection.exception import AcneException
 from acneDetection.entity.config_entity import DataValidationConfig
 from acneDetection.entity.artifacts_entity import (DataIngestionArtifact,
                                                   DataValidationArtifact)
@@ -19,7 +19,7 @@ class DataValidation:
             self.data_validation_config = data_validation_config
 
         except Exception as e:
-            raise SignException(e, sys) 
+            raise AcneException(e, sys) 
         
 
     
@@ -45,7 +45,7 @@ class DataValidation:
             return validation_status
 
         except Exception as e:
-            raise SignException(e, sys)
+            raise AcneException(e, sys)
         
 
     
@@ -65,4 +65,4 @@ class DataValidation:
             return data_validation_artifact
 
         except Exception as e:
-            raise SignException(e, sys)
+            raise AcneException(e, sys)
