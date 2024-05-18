@@ -1,9 +1,4 @@
-from acneDetection.logger import logging
-from acneDetection.exception import AcneException
-import sys
+from acneDetection.pipeline.training_pipeline import TrainPipeline
 
-try:
-     x = 7/'9'
-     
-except Exception as e:
-     raise AcneException(e, sys) from e
+obj = TrainPipeline()
+obj.run_pipeline()
