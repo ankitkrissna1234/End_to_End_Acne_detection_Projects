@@ -22,8 +22,8 @@ class ModelTrainer:
 
         try:
             logging.info("Unzipping data")
-            os.system("acne_detection_data.zip")
-            os.system("rm acne_detection_data.zip")
+            os.system("acne_dataset.zip")
+            os.system("rm acne_dataset.zip")
 
             with open("data.yaml", 'r') as stream:
                 num_classes = str(yaml.safe_load(stream)['nc'])
