@@ -10,7 +10,7 @@ DATA_INGESTION_DIR_NAME: str = "data_ingestion"
 
 DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"
 
-DATA_DOWNLOAD_URL: str = "https://github.com/ankitkrissna1234/Datasets_For_Projects/raw/main/acne_dataset.zip"
+DATA_DOWNLOAD_URL: str = "https://github.com/ankitkrissna1234/Datasets_For_Projects/raw/main/acne_detaset.zip"
 
 
 
@@ -44,5 +44,5 @@ MODEL_TRAINER_BATCH_SIZE: int = 16
 """
 MODEL PUSHER related constant start with MODEL_PUSHER var name
 """
-BUCKET_NAME = "sign-lang-2024"
+BUCKET_NAME = "acne-detection-2024"
 S3_MODEL_NAME = "best.pt"

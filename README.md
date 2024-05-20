@@ -38,11 +38,11 @@ aws configure
 ## How to run:
 
 ```bash
-conda create -n signlang python=3.7 -y
+conda create -p {your env name} python=3.7 -y
 ```
 
 ```bash
-conda activate signlang
+conda activate ./{your env name}
 ```
 
 ```bash
